@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Hernán Matías Ortiz - CV online</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top" style="opacity: 0.8, max-width= 100%";>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">INICIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header" style="max-width: 100%;">
+              <h5 class="offcanvas-title" id="titulo_barra_navegacion">Mi CV online</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="habilidades" href="habilidades.html">Habilidades</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Experiencias
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="experiencia_laboral.html">Laboral</a></li>
+                    <li><a class="dropdown-item" href="formacion_academica.html">Academica</a></li>                    
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div style="padding: 70px;">
+        <h2> Contacto </h2>
+        <form action="https://formsubmit.co/hernanortiz18@gmail.com" method="POST" />
+          <label for="nombre">Nombre</label> <br>
+          <input type="text" name="name" required> <br>
+          <label for="mail">E-Mail</label> <br>
+          <input type="email" name="email" required> <br>
+          <label for="asunto"> Asunto</label> <br>
+          <input type="text" name="asunto" required> <br>
+          <label for="mensaje">Mensaje</label> <br>
+          <textarea name="mensaje" id="enviarMensaje" cols="150" rows="5"></textarea> <br>
+          <input type="submit" id="button"  value = "Enviar">
+          <input type="reset" id= "button" value = "limpiar">
+        </form>
+      </div>
+
+      <div class="col2" style="width: 60%; ;float: right; padding: 10px;">
+        <col class="foto_presentacion" style="left: 50%; margin-inline: 10px; float:none; width: 30%;">
+              <i class="fa-solid fa-at" style="align-content: center;"></i><a onclick="enviarMail()" href="send_mail.html" id="contacto">Contacto</a> <br> <i class="fa-solid fa-phone" style="align-content: center;"></i> <a href="https://api.whatsapp.com/send?phone=543446300092&text=.">(+54)3446-300092</a><br>
+              <i class="fa-brands fa-linkedin" style="align-content: center;"></i> <a href="http://www.linkedin.com/in/hernanortiz18" >/hernanortiz18</a><br> 
+              <footer>&copy; Desarrollado por Hernán Matías Ortiz </footer>
+      </div>
+      
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="funciones.js"></script>
+</body>
+</html>
